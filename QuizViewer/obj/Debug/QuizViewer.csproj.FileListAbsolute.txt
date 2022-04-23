@@ -1,0 +1,13 @@
+C:\Users\vasya\Desktop\SimpleOfflineQuizer\QuizViewer\obj\Debug\QuizViewer.csproj.AssemblyReference.cache
+C:\Users\vasya\Desktop\SimpleOfflineQuizer\QuizViewer\obj\Debug\SimpleQuizer.Viewer.Properties.Resources.resources
+C:\Users\vasya\Desktop\SimpleOfflineQuizer\QuizViewer\obj\Debug\QuizViewer.csproj.GenerateResource.cache
+C:\Users\vasya\Desktop\SimpleOfflineQuizer\QuizViewer\obj\Debug\QuizViewer.csproj.CoreCompileInputs.cache
+C:\Users\vasya\Desktop\SimpleOfflineQuizer\QuizViewer\bin\Debug\QuizViewer.exe.config
+C:\Users\vasya\Desktop\SimpleOfflineQuizer\QuizViewer\bin\Debug\QuizViewer.exe
+C:\Users\vasya\Desktop\SimpleOfflineQuizer\QuizViewer\bin\Debug\QuizViewer.pdb
+C:\Users\vasya\Desktop\SimpleOfflineQuizer\QuizViewer\obj\Debug\SimpleQuizer.Viewer.Form1.resources
+C:\Users\vasya\Desktop\SimpleOfflineQuizer\QuizViewer\obj\Debug\QuizViewer.csproj.CopyComplete
+C:\Users\vasya\Desktop\SimpleOfflineQuizer\QuizViewer\obj\Debug\QuizViewer.exe
+C:\Users\vasya\Desktop\SimpleOfflineQuizer\QuizViewer\obj\Debug\QuizViewer.pdb
+C:\Users\vasya\Desktop\SimpleOfflineQuizer\QuizViewer\bin\Debug\SimpleQuizer.dll
+C:\Users\vasya\Desktop\SimpleOfflineQuizer\QuizViewer\bin\Debug\SimpleQuizer.pdb

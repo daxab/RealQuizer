@@ -1,0 +1,12 @@
+C:\Users\vasya\Desktop\SimpleOfflineQuizer\QuizLibrary\bin\Debug\QuizLibrary.dll
+C:\Users\vasya\Desktop\SimpleOfflineQuizer\QuizLibrary\bin\Debug\QuizLibrary.pdb
+C:\Users\vasya\Desktop\SimpleOfflineQuizer\QuizLibrary\obj\Debug\SimpleQuizer.csproj.AssemblyReference.cache
+C:\Users\vasya\Desktop\SimpleOfflineQuizer\QuizLibrary\obj\Debug\SimpleQuizer.csproj.CoreCompileInputs.cache
+C:\Users\vasya\Desktop\SimpleOfflineQuizer\QuizLibrary\obj\Debug\QuizLibrary.dll
+C:\Users\vasya\Desktop\SimpleOfflineQuizer\QuizLibrary\obj\Debug\QuizLibrary.pdb
+C:\Users\vasya\Desktop\SimpleOfflineQuizer\SimpleQuizer\obj\Debug\SimpleQuizer.csproj.AssemblyReference.cache
+C:\Users\vasya\Desktop\SimpleOfflineQuizer\SimpleQuizer\obj\Debug\SimpleQuizer.csproj.CoreCompileInputs.cache
+C:\Users\vasya\Desktop\SimpleOfflineQuizer\SimpleQuizer\bin\Debug\SimpleQuizer.dll
+C:\Users\vasya\Desktop\SimpleOfflineQuizer\SimpleQuizer\bin\Debug\SimpleQuizer.pdb
+C:\Users\vasya\Desktop\SimpleOfflineQuizer\SimpleQuizer\obj\Debug\SimpleQuizer.dll
+C:\Users\vasya\Desktop\SimpleOfflineQuizer\SimpleQuizer\obj\Debug\SimpleQuizer.pdb
