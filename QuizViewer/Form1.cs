@@ -17,12 +17,5 @@ namespace SimpleQuizer.Viewer
         {
             InitializeComponent();
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            Class1 c = new Class1();
-            c.T();
-            c.R();
-        }
     }
 }
