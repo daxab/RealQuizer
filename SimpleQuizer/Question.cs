@@ -6,19 +6,19 @@ namespace SimpleQuizer
     public enum QuestionType
     {
         Choiсe,
-        Open
+        MultiChoice
     }
 
     public class Question
     {
         public int Number;
-        public string QuastionText;
+        public string Text;
         public QuestionType Type;
-        public List<string> Answers;
-
+        public List<Answer> Answers;
+  
         public Question()
         {
-            Answers = new List<string>();
+            Answers = new List<Answer>();
         }
     }
 }
