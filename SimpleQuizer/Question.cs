@@ -15,5 +15,10 @@ namespace SimpleQuizer
         public string QuastionText;
         public QuestionType Type;
         public List<string> Answers;
+
+        public Question()
+        {
+            Answers = new List<string>();
+        }
     }
 }

@@ -43,6 +43,7 @@ namespace SimpleQuizer.Viewer
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -233,11 +234,22 @@ namespace SimpleQuizer.Viewer
             this.label2.TabIndex = 2;
             this.label2.Text = "Информация";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(736, 187);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(831, 658);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -272,6 +284,7 @@ namespace SimpleQuizer.Viewer
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.Button button1;
     }
 }
 
