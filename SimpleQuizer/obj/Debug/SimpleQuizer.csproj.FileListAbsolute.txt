@@ -10,3 +10,9 @@ C:\Users\vasya\Desktop\SimpleOfflineQuizer\SimpleQuizer\bin\Debug\SimpleQuizer.d
 C:\Users\vasya\Desktop\SimpleOfflineQuizer\SimpleQuizer\bin\Debug\SimpleQuizer.pdb
 C:\Users\vasya\Desktop\SimpleOfflineQuizer\SimpleQuizer\obj\Debug\SimpleQuizer.dll
 C:\Users\vasya\Desktop\SimpleOfflineQuizer\SimpleQuizer\obj\Debug\SimpleQuizer.pdb
+C:\Users\Роман\Desktop\SimpleQuizer\SimpleOfflineQuizer\SimpleQuizer\bin\Debug\SimpleQuizer.dll
+C:\Users\Роман\Desktop\SimpleQuizer\SimpleOfflineQuizer\SimpleQuizer\bin\Debug\SimpleQuizer.pdb
+C:\Users\Роман\Desktop\SimpleQuizer\SimpleOfflineQuizer\SimpleQuizer\obj\Debug\SimpleQuizer.csproj.AssemblyReference.cache
+C:\Users\Роман\Desktop\SimpleQuizer\SimpleOfflineQuizer\SimpleQuizer\obj\Debug\SimpleQuizer.csproj.CoreCompileInputs.cache
+C:\Users\Роман\Desktop\SimpleQuizer\SimpleOfflineQuizer\SimpleQuizer\obj\Debug\SimpleQuizer.dll
+C:\Users\Роман\Desktop\SimpleQuizer\SimpleOfflineQuizer\SimpleQuizer\obj\Debug\SimpleQuizer.pdb

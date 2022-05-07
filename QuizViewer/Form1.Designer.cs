@@ -31,10 +31,13 @@ namespace SimpleQuizer.Viewer
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.debugToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.открытьТестовыйТестToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.questionText = new System.Windows.Forms.TextBox();
             this.questionInfoLable = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -42,9 +45,6 @@ namespace SimpleQuizer.Viewer
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.questionNumberLable = new System.Windows.Forms.Label();
-            this.debugToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.открытьТестовыйТестToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -66,6 +66,21 @@ namespace SimpleQuizer.Viewer
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
             this.файлToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.файлToolStripMenuItem.Text = "Файл";
+            // 
+            // debugToolStripMenuItem
+            // 
+            this.debugToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.открытьТестовыйТестToolStripMenuItem});
+            this.debugToolStripMenuItem.Name = "debugToolStripMenuItem";
+            this.debugToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
+            this.debugToolStripMenuItem.Text = "Debug";
+            // 
+            // открытьТестовыйТестToolStripMenuItem
+            // 
+            this.открытьТестовыйТестToolStripMenuItem.Name = "открытьТестовыйТестToolStripMenuItem";
+            this.открытьТестовыйТестToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
+            this.открытьТестовыйТестToolStripMenuItem.Text = "Открыть тестовый тест";
+            this.открытьТестовыйТестToolStripMenuItem.Click += new System.EventHandler(this.открытьТестовыйТестToolStripMenuItem_Click);
             // 
             // questionText
             // 
@@ -95,6 +110,7 @@ namespace SimpleQuizer.Viewer
             this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 45F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -123,13 +139,28 @@ namespace SimpleQuizer.Viewer
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox2.BackColor = System.Drawing.SystemColors.Window;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(48, 3);
+            this.textBox2.Location = new System.Drawing.Point(50, 4);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(753, 91);
+            this.textBox2.Size = new System.Drawing.Size(750, 89);
             this.textBox2.TabIndex = 1;
             this.textBox2.Text = "Ответ";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox3.BackColor = System.Drawing.SystemColors.Window;
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox3.Location = new System.Drawing.Point(50, 100);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(750, 89);
+            this.textBox3.TabIndex = 1;
+            this.textBox3.Text = "Ответ";
             // 
             // textBox4
             // 
@@ -138,11 +169,11 @@ namespace SimpleQuizer.Viewer
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox4.BackColor = System.Drawing.SystemColors.Window;
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox4.Location = new System.Drawing.Point(48, 197);
+            this.textBox4.Location = new System.Drawing.Point(50, 196);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(753, 91);
+            this.textBox4.Size = new System.Drawing.Size(750, 89);
             this.textBox4.TabIndex = 1;
             this.textBox4.Text = "Ответ";
             // 
@@ -153,11 +184,11 @@ namespace SimpleQuizer.Viewer
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox5.BackColor = System.Drawing.SystemColors.Window;
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox5.Location = new System.Drawing.Point(48, 294);
+            this.textBox5.Location = new System.Drawing.Point(50, 292);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(753, 91);
+            this.textBox5.Size = new System.Drawing.Size(750, 92);
             this.textBox5.TabIndex = 1;
             this.textBox5.Text = "Ответ";
             // 
@@ -166,10 +197,10 @@ namespace SimpleQuizer.Viewer
             this.radioButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.radioButton1.Location = new System.Drawing.Point(3, 3);
+            this.radioButton1.Location = new System.Drawing.Point(4, 4);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.radioButton1.Size = new System.Drawing.Size(39, 91);
+            this.radioButton1.Size = new System.Drawing.Size(39, 89);
             this.radioButton1.TabIndex = 2;
             this.radioButton1.TabStop = true;
             this.radioButton1.UseVisualStyleBackColor = true;
@@ -179,10 +210,10 @@ namespace SimpleQuizer.Viewer
             this.radioButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.radioButton2.Location = new System.Drawing.Point(3, 100);
+            this.radioButton2.Location = new System.Drawing.Point(4, 100);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.radioButton2.Size = new System.Drawing.Size(39, 91);
+            this.radioButton2.Size = new System.Drawing.Size(39, 89);
             this.radioButton2.TabIndex = 2;
             this.radioButton2.TabStop = true;
             this.radioButton2.UseVisualStyleBackColor = true;
@@ -192,10 +223,10 @@ namespace SimpleQuizer.Viewer
             this.radioButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.radioButton3.Location = new System.Drawing.Point(3, 197);
+            this.radioButton3.Location = new System.Drawing.Point(4, 196);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.radioButton3.Size = new System.Drawing.Size(39, 91);
+            this.radioButton3.Size = new System.Drawing.Size(39, 89);
             this.radioButton3.TabIndex = 2;
             this.radioButton3.TabStop = true;
             this.radioButton3.UseVisualStyleBackColor = true;
@@ -205,10 +236,10 @@ namespace SimpleQuizer.Viewer
             this.radioButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.radioButton4.Location = new System.Drawing.Point(3, 294);
+            this.radioButton4.Location = new System.Drawing.Point(4, 292);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
-            this.radioButton4.Size = new System.Drawing.Size(39, 91);
+            this.radioButton4.Size = new System.Drawing.Size(39, 92);
             this.radioButton4.TabIndex = 2;
             this.radioButton4.TabStop = true;
             this.radioButton4.UseVisualStyleBackColor = true;
@@ -222,36 +253,6 @@ namespace SimpleQuizer.Viewer
             this.questionNumberLable.TabIndex = 2;
             this.questionNumberLable.Text = "Информация";
             // 
-            // debugToolStripMenuItem
-            // 
-            this.debugToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.открытьТестовыйТестToolStripMenuItem});
-            this.debugToolStripMenuItem.Name = "debugToolStripMenuItem";
-            this.debugToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
-            this.debugToolStripMenuItem.Text = "Debug";
-            // 
-            // открытьТестовыйТестToolStripMenuItem
-            // 
-            this.открытьТестовыйТестToolStripMenuItem.Name = "открытьТестовыйТестToolStripMenuItem";
-            this.открытьТестовыйТестToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
-            this.открытьТестовыйТестToolStripMenuItem.Text = "Открыть тестовый тест";
-            this.открытьТестовыйТестToolStripMenuItem.Click += new System.EventHandler(this.открытьТестовыйТестToolStripMenuItem_Click);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3.Location = new System.Drawing.Point(48, 100);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(753, 91);
-            this.textBox3.TabIndex = 1;
-            this.textBox3.Text = "Ответ";
-            // 
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
@@ -262,6 +263,7 @@ namespace SimpleQuizer.Viewer
             this.button1.TabIndex = 4;
             this.button1.Text = "Проверить";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
