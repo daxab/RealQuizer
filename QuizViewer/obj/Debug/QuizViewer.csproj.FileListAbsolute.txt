@@ -51,4 +51,3 @@ C:\Users\User_01\Desktop\SimpleOfflineQuizer\QuizViewer\obj\Debug\QuizViewer.csp
 C:\Users\User_01\Desktop\SimpleOfflineQuizer\QuizViewer\obj\Debug\QuizViewer.csproj.CoreCompileInputs.cache
 C:\Users\User_01\Desktop\SimpleOfflineQuizer\QuizViewer\obj\Debug\QuizViewer.exe
 C:\Users\User_01\Desktop\SimpleOfflineQuizer\QuizViewer\obj\Debug\QuizViewer.pdb
-C:\Users\User_01\Desktop\SimpleOfflineQuizer\QuizViewer\obj\Debug\QuizViewer.csproj.CopyComplete
