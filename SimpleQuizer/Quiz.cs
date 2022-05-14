@@ -85,8 +85,7 @@ namespace SimpleQuizer
             q.Text = "Что такое мел?";
             q.Type = QuestionType.Open;
             q.Answers.Add(new Answer("кальций", true));
-            q.Answers.Add(new Answer("Кальций", true));
-       
+
 
             quiz.Questions.Add(q);
 

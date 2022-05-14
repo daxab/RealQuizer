@@ -17,7 +17,7 @@ namespace SimpleQuizer.Viewer
         public List<RadioButton> RadioButtons = new List<RadioButton>();
         public List<CheckBox> CheckBoxes = new List<CheckBox>();
         public Quiz CurrentQuiz;
-        public int MultiChoiseUserCorrectAnswers;
+        public int UserCorrectAnswers;
         public TableTextBox UserTextBox = new TableTextBox();
         //public List<RadioButton> RadioButtons = new List<RadioButton>();
         private List<Answer> userAnswers = new List<Answer>();
@@ -44,49 +44,17 @@ namespace SimpleQuizer.Viewer
 
         private void CheckUserAnswers()
         {
-            if (CurrentQuiz.CurrentQuestion.Type == QuestionType.Choiсe)
+            UserCorrectAnswers = 0;
+            for (int i = 0; i < userAnswers.Count; i++)
             {
-                for (int i = 0; i < userAnswers.Count; i++)
+                if (userAnswers[i].Correct)
                 {
-                    if (userAnswers[i].Correct == true)
-                    {
-                        MessageBox.Show("valid");
-                    }
-                    else
-                    {
-                        MessageBox.Show("invalid");
-                    }
+                    UserCorrectAnswers++;
                 }
             }
-            if (CurrentQuiz.CurrentQuestion.Type == QuestionType.MultiChoice)
+            if (UserCorrectAnswers == CurrentQuiz.CurrentQuestion.GetCorrectAnswersAmount() && UserCorrectAnswers == userAnswers.Count)
             {
-                MultiChoiseUserCorrectAnswers = 0;
-                for (int i = 0; i < userAnswers.Count; i++)
-                {
-                    if (userAnswers[i].Correct)
-                    {
-                        MultiChoiseUserCorrectAnswers++;
-                    }
-                }
-                if (MultiChoiseUserCorrectAnswers >= userAnswers.Count/2 && MultiChoiseUserCorrectAnswers == CurrentQuiz.CurrentQuestion.GetCorrectAnswersAmount())
-                {
-                    MessageBox.Show("valid");
-                }
-                else
-                {
-                    MessageBox.Show("invalid");
-                }
-            }
-            if (CurrentQuiz.CurrentQuestion.Type == QuestionType.Open)
-            {
-                if(userAnswers[0].Text == CurrentQuiz.CurrentQuestion.Answers[0].Text)
-                {
-                    MessageBox.Show("valid");
-                }
-                else
-                {
-                    MessageBox.Show("invalid");
-                }
+                MessageBox.Show("valid");
             }
         }
 
@@ -116,20 +84,17 @@ namespace SimpleQuizer.Viewer
             }
             if(CurrentQuiz.CurrentQuestion.Type == QuestionType.Open)
             {
-                string openanswer = "";
-                if (UserTextBox.Text.Split(' ').Length != 0)
+                for(int i = 0; i < CurrentQuiz.CurrentQuestion.Answers.Count; i++)
                 {
-                    for (int i = 0; i < UserTextBox.Text.Split(' ').Length; i++)
+                    if (UserTextBox.Text.Trim().ToLower() == CurrentQuiz.CurrentQuestion.Answers[0].Text)
                     {
-                        openanswer += UserTextBox.Text.Split(' ')[i];
+                        userAnswers.Add(new Answer(UserTextBox.Text, true));
+                    }
+                    else
+                    {
+                        userAnswers.Add(new Answer(UserTextBox.Text, false));
                     }
                 }
-                else
-                {
-                    openanswer = UserTextBox.Text;
-                }
-                Answer answer = new Answer(openanswer, true);
-                userAnswers.Add(answer);
             }
         }
 
@@ -213,7 +178,7 @@ namespace SimpleQuizer.Viewer
 
         private void сохранитьToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-           Quiz.GetTesticQuiz().Save("TesticQuiz.tqz");
+            Quiz.GetTesticQuiz().Save("TesticQuiz.tqz");
         }
 
         private void загрузитьToolStripMenuItem_Click(object sender, EventArgs e)
