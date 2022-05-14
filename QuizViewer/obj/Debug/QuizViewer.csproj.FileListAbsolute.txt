@@ -24,3 +24,17 @@ C:\Users\Роман\Desktop\SimpleQuizer\SimpleOfflineQuizer\QuizViewer\obj\Debu
 C:\Users\Роман\Desktop\SimpleQuizer\SimpleOfflineQuizer\QuizViewer\obj\Debug\QuizViewer.csproj.CopyComplete
 C:\Users\Роман\Desktop\SimpleQuizer\SimpleOfflineQuizer\QuizViewer\obj\Debug\QuizViewer.exe
 C:\Users\Роман\Desktop\SimpleQuizer\SimpleOfflineQuizer\QuizViewer\obj\Debug\QuizViewer.pdb
+C:\Users\User_01\Desktop\SimpleQuizer\SimpleOfflineQuizer\QuizViewer\bin\Debug\QuizViewer.exe.config
+C:\Users\User_01\Desktop\SimpleQuizer\SimpleOfflineQuizer\QuizViewer\bin\Debug\QuizViewer.exe
+C:\Users\User_01\Desktop\SimpleQuizer\SimpleOfflineQuizer\QuizViewer\bin\Debug\QuizViewer.pdb
+C:\Users\User_01\Desktop\SimpleQuizer\SimpleOfflineQuizer\QuizViewer\bin\Debug\SimpleQuizer.dll
+C:\Users\User_01\Desktop\SimpleQuizer\SimpleOfflineQuizer\QuizViewer\bin\Debug\SimpleQuizer.pdb
+C:\Users\User_01\Desktop\SimpleQuizer\SimpleOfflineQuizer\QuizViewer\obj\Debug\SimpleQuizer.Viewer.Form1.resources
+C:\Users\User_01\Desktop\SimpleQuizer\SimpleOfflineQuizer\QuizViewer\obj\Debug\SimpleQuizer.Viewer.Properties.Resources.resources
+C:\Users\User_01\Desktop\SimpleQuizer\SimpleOfflineQuizer\QuizViewer\obj\Debug\QuizViewer.csproj.GenerateResource.cache
+C:\Users\User_01\Desktop\SimpleQuizer\SimpleOfflineQuizer\QuizViewer\obj\Debug\QuizViewer.csproj.CoreCompileInputs.cache
+C:\Users\User_01\Desktop\SimpleQuizer\SimpleOfflineQuizer\QuizViewer\obj\Debug\QuizViewer.exe
+C:\Users\User_01\Desktop\SimpleQuizer\SimpleOfflineQuizer\QuizViewer\obj\Debug\QuizViewer.pdb
+C:\Users\User_01\Desktop\SimpleQuizer\SimpleOfflineQuizer\QuizViewer\obj\Debug\QuizViewer.csproj.AssemblyReference.cache
+C:\Users\User_01\Desktop\SimpleQuizer\SimpleOfflineQuizer\QuizViewer\obj\Debug\SimpleQuizer.Viewer.TableLayoutTextBoxCell.resources
+C:\Users\Роман\Desktop\SimpleQuizer\SimpleOfflineQuizer\QuizViewer\obj\Debug\SimpleQuizer.Viewer.TableLayoutTextBoxCell.resources

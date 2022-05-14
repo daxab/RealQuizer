@@ -1,0 +1,12 @@
+C:\Users\User_01\Desktop\SimpleQuizer\SimpleOfflineQuizer\QuizEditor\bin\Debug\QuizEditor.exe.config
+C:\Users\User_01\Desktop\SimpleQuizer\SimpleOfflineQuizer\QuizEditor\bin\Debug\QuizEditor.exe
+C:\Users\User_01\Desktop\SimpleQuizer\SimpleOfflineQuizer\QuizEditor\bin\Debug\QuizEditor.pdb
+C:\Users\User_01\Desktop\SimpleQuizer\SimpleOfflineQuizer\QuizEditor\bin\Debug\SimpleQuizer.dll
+C:\Users\User_01\Desktop\SimpleQuizer\SimpleOfflineQuizer\QuizEditor\bin\Debug\SimpleQuizer.pdb
+C:\Users\User_01\Desktop\SimpleQuizer\SimpleOfflineQuizer\QuizEditor\obj\Debug\QuizEditor.csproj.AssemblyReference.cache
+C:\Users\User_01\Desktop\SimpleQuizer\SimpleOfflineQuizer\QuizEditor\obj\Debug\SimpleQuizer.Editor.Properties.Resources.resources
+C:\Users\User_01\Desktop\SimpleQuizer\SimpleOfflineQuizer\QuizEditor\obj\Debug\QuizEditor.csproj.GenerateResource.cache
+C:\Users\User_01\Desktop\SimpleQuizer\SimpleOfflineQuizer\QuizEditor\obj\Debug\QuizEditor.csproj.CoreCompileInputs.cache
+C:\Users\User_01\Desktop\SimpleQuizer\SimpleOfflineQuizer\QuizEditor\obj\Debug\QuizEditor.csproj.CopyComplete
+C:\Users\User_01\Desktop\SimpleQuizer\SimpleOfflineQuizer\QuizEditor\obj\Debug\QuizEditor.exe
+C:\Users\User_01\Desktop\SimpleQuizer\SimpleOfflineQuizer\QuizEditor\obj\Debug\QuizEditor.pdb

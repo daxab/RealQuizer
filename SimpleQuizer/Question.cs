@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace SimpleQuizer
 {
     public enum QuestionType
     {
         Choiсe,
-        MultiChoice
+        MultiChoice,
+        Open
     }
 
     public class Question
@@ -19,6 +21,18 @@ namespace SimpleQuizer
         public Question()
         {
             Answers = new List<Answer>();
+        }
+        public int GetCorrectAnswersAmount()
+        {
+            int CorrectAnswersAmount = 0;
+            for (int i = 0; i < this.Answers.Count; i++)
+            {
+                if (this.Answers[i].Correct)
+                {
+                    CorrectAnswersAmount++;
+                }
+            }
+            return CorrectAnswersAmount;
         }
     }
 }
