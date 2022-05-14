@@ -31,6 +31,7 @@ namespace SimpleQuizer.Viewer
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.сохранитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.debugToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.открытьТестовыйТестToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.questionText = new System.Windows.Forms.TextBox();
@@ -48,6 +49,9 @@ namespace SimpleQuizer.Viewer
             this.button1 = new System.Windows.Forms.Button();
             this.NextQuestion = new System.Windows.Forms.Button();
             this.PrevQusetion = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.загрузитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.menuStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -65,9 +69,19 @@ namespace SimpleQuizer.Viewer
             // 
             // файлToolStripMenuItem
             // 
+            this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.сохранитьToolStripMenuItem,
+            this.загрузитьToolStripMenuItem});
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
             this.файлToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.файлToolStripMenuItem.Text = "Файл";
+            // 
+            // сохранитьToolStripMenuItem
+            // 
+            this.сохранитьToolStripMenuItem.Name = "сохранитьToolStripMenuItem";
+            this.сохранитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.сохранитьToolStripMenuItem.Text = "Сохранить";
+            this.сохранитьToolStripMenuItem.Click += new System.EventHandler(this.сохранитьToolStripMenuItem_Click_1);
             // 
             // debugToolStripMenuItem
             // 
@@ -148,6 +162,7 @@ namespace SimpleQuizer.Viewer
             this.textBox2.Size = new System.Drawing.Size(805, 65);
             this.textBox2.TabIndex = 1;
             this.textBox2.Text = "Ответ";
+           
             // 
             // textBox3
             // 
@@ -290,6 +305,17 @@ namespace SimpleQuizer.Viewer
             this.PrevQusetion.UseVisualStyleBackColor = true;
             this.PrevQusetion.Click += new System.EventHandler(this.PrevQusetion_Click);
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // загрузитьToolStripMenuItem
+            // 
+            this.загрузитьToolStripMenuItem.Name = "загрузитьToolStripMenuItem";
+            this.загрузитьToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.загрузитьToolStripMenuItem.Text = "Загрузить";
+            this.загрузитьToolStripMenuItem.Click += new System.EventHandler(this.загрузитьToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -337,6 +363,10 @@ namespace SimpleQuizer.Viewer
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button NextQuestion;
         private System.Windows.Forms.Button PrevQusetion;
+        private System.Windows.Forms.ToolStripMenuItem сохранитьToolStripMenuItem;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.ToolStripMenuItem загрузитьToolStripMenuItem;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 

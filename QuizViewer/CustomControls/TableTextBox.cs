@@ -12,8 +12,8 @@ namespace SimpleQuizer.Viewer
     {
         public TableTextBox()
         {
-            this.Location = new Point(15, 214);
-            this.Size = new Size(859,297); 
+            this.Location = new Point(15, 220);
+            this.Size = new Size(853,297); 
             this.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             this.Multiline = true;
 

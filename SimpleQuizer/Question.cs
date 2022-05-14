@@ -10,7 +10,8 @@ namespace SimpleQuizer
         MultiChoice,
         Open
     }
-
+    
+    [Serializable]
     public class Question
     {
         public int Number;

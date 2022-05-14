@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -67,7 +68,7 @@ namespace SimpleQuizer.Viewer
                         MultiChoiseUserCorrectAnswers++;
                     }
                 }
-                if (MultiChoiseUserCorrectAnswers == userAnswers.Count && MultiChoiseUserCorrectAnswers == CurrentQuiz.CurrentQuestion.GetCorrectAnswersAmount())
+                if (MultiChoiseUserCorrectAnswers >= userAnswers.Count/2 && MultiChoiseUserCorrectAnswers == CurrentQuiz.CurrentQuestion.GetCorrectAnswersAmount())
                 {
                     MessageBox.Show("valid");
                 }
@@ -203,6 +204,27 @@ namespace SimpleQuizer.Viewer
                 CurrentQuiz.NextQuestion();
                 ShowQuestion(CurrentQuiz.CurrentQuestion);
             }
+        }
+
+        private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void сохранитьToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+           Quiz.GetTesticQuiz().Save("TesticQuiz.tqz");
+        }
+
+        private void загрузитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "*.tqz | *.tqz";
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                CurrentQuiz = new Quiz();
+                CurrentQuiz.Load(openFileDialog1.FileName);
+            }
+            ShowQuestion(CurrentQuiz.Questions[0]);
         }
     }
 }
