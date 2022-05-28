@@ -34,3 +34,9 @@ C:\Users\Роман\Desktop\RealQuizer\SimpleQuizer\obj\Debug\SimpleQuizer.cspro
 C:\Users\Роман\Desktop\RealQuizer\SimpleQuizer\obj\Debug\SimpleQuizer.csproj.CoreCompileInputs.cache
 C:\Users\Роман\Desktop\RealQuizer\SimpleQuizer\obj\Debug\SimpleQuizer.dll
 C:\Users\Роман\Desktop\RealQuizer\SimpleQuizer\obj\Debug\SimpleQuizer.pdb
+C:\Users\User_01\Desktop\RealQuizer\RealQuizer\SimpleQuizer\bin\Debug\SimpleQuizer.dll
+C:\Users\User_01\Desktop\RealQuizer\RealQuizer\SimpleQuizer\bin\Debug\SimpleQuizer.pdb
+C:\Users\User_01\Desktop\RealQuizer\RealQuizer\SimpleQuizer\obj\Debug\SimpleQuizer.csproj.AssemblyReference.cache
+C:\Users\User_01\Desktop\RealQuizer\RealQuizer\SimpleQuizer\obj\Debug\SimpleQuizer.csproj.CoreCompileInputs.cache
+C:\Users\User_01\Desktop\RealQuizer\RealQuizer\SimpleQuizer\obj\Debug\SimpleQuizer.dll
+C:\Users\User_01\Desktop\RealQuizer\RealQuizer\SimpleQuizer\obj\Debug\SimpleQuizer.pdb

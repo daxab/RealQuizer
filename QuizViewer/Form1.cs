@@ -12,12 +12,14 @@ using SimpleQuizer;
 
 namespace SimpleQuizer.Viewer
 {
+   
     public partial class Form1 : Form
     {
         public List<RadioButton> RadioButtons = new List<RadioButton>();
         public List<CheckBox> CheckBoxes = new List<CheckBox>();
         public Quiz CurrentQuiz;
         public int UserCorrectAnswers;
+        public int CorrectQuestions = 0;
         public TableTextBox UserTextBox = new TableTextBox();
         //public List<RadioButton> RadioButtons = new List<RadioButton>();
         private List<Answer> userAnswers = new List<Answer>();
@@ -44,6 +46,7 @@ namespace SimpleQuizer.Viewer
 
         private void CheckUserAnswers()
         {
+            
             UserCorrectAnswers = 0;
             for (int i = 0; i < userAnswers.Count; i++)
             {
@@ -54,7 +57,7 @@ namespace SimpleQuizer.Viewer
             }
             if (UserCorrectAnswers == CurrentQuiz.CurrentQuestion.GetCorrectAnswersAmount() && UserCorrectAnswers == userAnswers.Count)
             {
-                MessageBox.Show("valid");
+                CorrectQuestions++;
             }
         }
 
@@ -68,8 +71,9 @@ namespace SimpleQuizer.Viewer
                 {
                     if (RadioButtons[i].Checked == true)
                     {
-                        userAnswers.Add(CurrentQuiz.CurrentQuestion.Answers[i]);
+                        CurrentQuiz.CurrentQuestion.UserAnswers.Add(CurrentQuiz.CurrentQuestion.Answers[i]);
                     }
+                 
                 }
             }
             if (CurrentQuiz.CurrentQuestion.Type == QuestionType.MultiChoice)
@@ -79,6 +83,7 @@ namespace SimpleQuizer.Viewer
                     if (CheckBoxes[i].Checked == true)
                     {
                         userAnswers.Add(CurrentQuiz.CurrentQuestion.Answers[i]);
+                        CurrentQuiz.CurrentQuestion.UserAnswers.Add(CurrentQuiz.CurrentQuestion.Answers[i]);
                     }
                 }
             }
@@ -89,10 +94,12 @@ namespace SimpleQuizer.Viewer
                     if (UserTextBox.Text.Trim().ToLower() == CurrentQuiz.CurrentQuestion.Answers[0].Text)
                     {
                         userAnswers.Add(new Answer(UserTextBox.Text, true));
+                        CurrentQuiz.CurrentQuestion.UserAnswers.Add(new Answer(UserTextBox.Text, true));
                     }
                     else
                     {
                         userAnswers.Add(new Answer(UserTextBox.Text, false));
+                        CurrentQuiz.CurrentQuestion.UserAnswers.Add(new Answer(UserTextBox.Text, false));
                     }
                 }
             }
@@ -148,9 +155,34 @@ namespace SimpleQuizer.Viewer
             }
         }
 
+        private void TryShowResultForm()
+        {
+            if(CurrentQuiz.CurrentQuestionIndex+1 == CurrentQuiz.Questions.Count)
+            {
+               
+                QuizResultForm f = new QuizResultForm(new QuizResult(CurrentQuiz));
+                f.Show();
+            }
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
+            if(CurrentQuiz.CurrentQuestionIndex+1 == CurrentQuiz.Questions.Count)
+            {
+                DialogResult result = MessageBox.Show("Правильных ответов:"+(CorrectQuestions.ToString()) + "/" + CurrentQuiz.Questions.Count.ToString(), "опа", MessageBoxButtons.YesNo);
+                if(result == DialogResult.Yes)
+                {
+                    TryShowResultForm();
+                }
+            }
             CheckQuestion();
+            if (CurrentQuiz != null)
+            {
+                CurrentQuiz.NextQuestion();
+                ShowQuestion(CurrentQuiz.CurrentQuestion);
+            }
+        
         }
 
         private void PrevQusetion_Click(object sender, EventArgs e)
@@ -164,11 +196,7 @@ namespace SimpleQuizer.Viewer
 
         private void NextQuestion_Click(object sender, EventArgs e)
         {
-            if (CurrentQuiz != null)
-            {
-                CurrentQuiz.NextQuestion();
-                ShowQuestion(CurrentQuiz.CurrentQuestion);
-            }
+            
         }
 
         private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
